@@ -11,5 +11,11 @@ public class HelloController
     {
         return "Hey there, API world 🌍!";
     }
+
+    @GetMapping("/test")
+    public String test()
+    {
+        return "Test API is working!";
+    }
     
 }

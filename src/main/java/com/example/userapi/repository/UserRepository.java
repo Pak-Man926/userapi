@@ -1,4 +1,10 @@
 package com.example.userapi.repository;
 
-public class UserRepository {
+import com.example.userapi.models.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+public interface UserRepository extends JpaRepository<User, Long>
+{
+    User findbyUsername(String username);
 }
